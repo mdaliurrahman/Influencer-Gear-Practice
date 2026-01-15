@@ -119,7 +119,7 @@
 
 /* Responsive Design for Mobile Devices */
 @media screen and (max-width: 576px) {
-   .nav-bar{
+   .nav-bar {
       flex-direction: column;
       gap: 10px;
       margin: 0 auto;
@@ -134,5 +134,26 @@
       gap: 10px;  
       margin: 0 auto;
    }
-   
+   .banner{
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+
+   }
+   .banner-content{
+      max-width: 100%;
+      margin-top: 50px;
+      text-align: center;
+   }
+   .banner-title {
+      max-width: 100%;
+      margin-bottom: 90px;
+
+   }
+   .banner-description{
+      max-width: 100%;
+   }
+  .banner-image img{
+   max-width: 100%;
+   margin: 0 auto;
+  }
 }
