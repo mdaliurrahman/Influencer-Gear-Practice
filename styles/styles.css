@@ -8,3 +8,44 @@
   font-style: normal;
 }
 
+/* Shared Styles here */
+.display-flex{
+    display: flex;
+}
+ /* navbar design start here */
+
+ .nav-bar{
+    gap: 520px;
+    margin-top: 87px;
+ }
+ .brand-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 5px;
+    max-width: 243px;
+    max-height: 52px;
+    margin-left: 120px;
+ }
+
+ .nav-link{
+    max-width: 500px;
+    max-height: 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 34px;
+    margin-right: 120px;
+ }
+ .nav-items{
+    list-style: none;
+    
+}
+
+.nav-links {
+    text-decoration: none;
+}
+
+.nav-links img {
+height: 36px;
+width: 36px;
+}
+
