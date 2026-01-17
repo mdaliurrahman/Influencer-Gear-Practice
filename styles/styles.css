@@ -236,7 +236,64 @@
  font-weight: 700;
  color: rgba(224, 44, 109, 0.87);
  border: none;
- 
+}
+
+/* Feature Section Design start here */
+.feature-section{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   max-width: 1110px;
+   max-height: 270px;
+   margin: 0 auto;
+   align-items: center;
+   margin-bottom: 100px;
+}
+
+.feature-container img {
+max-width: 404px;
+max-height: 270px;
+border-radius: 7px;
+}
+
+.feature-text{
+max-width: 610px;
+max-height: 224px;
+}
+
+.feature-title {
+   max-width: 610px;
+   max-height: 60px;
+   font-size: 2.37rem;
+   font-weight: 700;
+   white-space: nowrap;
+   color: #0A0826;
+   margin-bottom: 16px;
+}
+
+.feature-details{
+   max-width: 501px;
+   max-height: 88px;
+   font-size: 1rem;
+   font-weight: 700;
+   color: #6C6C6C;
+   margin-bottom: 16px;
+}
+
+.feature-btn{
+   width: 155;
+   height: 44;
+   background-color: #E02C6D;
+   border: none; 
+   margin-bottom: 23px;
+}
+
+.feature-btn-text{
+   width: 116;
+   height: 24;
+   font-size: 1rem;
+   font-weight: 700;
+   color: #FFFFFF;
+   margin: 5px 10px;
 }
 
 
