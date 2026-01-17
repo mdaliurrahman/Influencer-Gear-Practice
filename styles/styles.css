@@ -296,6 +296,30 @@ max-height: 224px;
    margin: 5px 10px;
 }
 
+.footer-text{
+   height: 200px;
+   color: #FFFFFF;
+   background-color: #0A0826;
+   text-align: center;
+   align-content: center;
+}
+
+.footer-title{
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #FFFFFF;
+}
+
+small{
+   font-size: 0.87rem;
+   font-weight: 700;
+}
+
+.footer-text p{
+   font-size: 0.87rem;
+   font-weight: 700;
+}
+
 
 /* Responsive Design for Mobile Devices */
 @media screen and (max-width: 576px) {
