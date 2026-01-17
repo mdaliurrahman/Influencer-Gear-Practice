@@ -23,6 +23,10 @@
 
 }
 
+.inline-text {
+  white-space: nowrap;
+}
+
  /* navbar design start here */
 
  .nav-bar{
@@ -184,10 +188,11 @@
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    
  }
-.card .card-image {
+.card .card-image img {
    max-width: 300px;
    max-height: 256px;
    padding-bottom: 16px;
+   margin: 0 auto;
 }
 .card-title{
    max-width: 151px;
@@ -224,18 +229,15 @@
    letter-spacing: 1.8%;
    margin-bottom: 17px;
 }
-.card-btn{
+.card-btn {
  width: 99px;
  height: 24px;
  font-size: 1rem;
  font-weight: 700;
  color: rgba(224, 44, 109, 0.87);
  border: none;
- text-align: right;
- align-items: last baseline;
  
 }
-
 
 
 /* Responsive Design for Mobile Devices */
@@ -253,11 +255,13 @@
       gap: 10px;  
       margin: 0 auto;
    }
-   .banner{
+   .banner, .card-container {
       grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      height: 100%;
       margin: 0 auto;
-
    }
+
    .banner-content{
       max-width: 100%;
       text-align: center;
@@ -297,8 +301,10 @@
    gap: 5px;
    margin: 0 auto;
    align-items: center;
-   align-content: center;
-   
-   
+   align-content: center;  
+  }
+
+  .card {
+  margin: 0 auto;
   }
 }
