@@ -117,6 +117,30 @@
    margin-top: 50px;
 }
 
+/* Sponsors logos development start here */
+
+.sponsor{
+   max-width: 1110px;
+   max-height: 110px;
+   margin: 0 auto;
+   margin-top: 69px;
+   margin-bottom: 100px;
+   padding: 36px 60px;
+   border-top: 1px solid rgb(244, 238, 238);
+   border-bottom: 1px solid rgb(244, 238, 238);
+}
+.sponsor-container{
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   max-width: 986.47px;
+   max-height: 39.61px;
+   margin: 0 auto;
+   
+}
+
+
+
+
 /* Responsive Design for Mobile Devices */
 @media screen and (max-width: 576px) {
    .nav-bar {
@@ -124,9 +148,7 @@
       gap: 10px;
       margin: 0 auto;
    }
-   .brand-name{
-      margin: 0 auto;
-   }
+  
    .nav-link{
       max-width: 100%;
       margin-right: 0px;
@@ -141,11 +163,14 @@
    }
    .banner-content{
       max-width: 100%;
-      margin-top: 50px;
       text-align: center;
+      margin-top: 0px;
+      margin-bottom: 80px;
+      order: 2;
    }
    .banner-title {
       max-width: 100%;
+      margin-top: 0px;
       margin-bottom: 90px;
 
    }
@@ -153,7 +178,30 @@
       max-width: 100%;
    }
   .banner-image img{
-   max-width: 100%;
+      max-width: 100%;
+      margin-top: 50px;
+      margin-bottom: 0px;
+      order: 1;
+  }
+   .sponsor{
+      width: 100%;
+      height: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-right: 0px;
+      
+      
+     
+   }
+  .sponsor-container{
+   width: 100%;
+   height: 100%;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 5px;
    margin: 0 auto;
+   align-items: center;
+   align-content: center;
+   
+   
   }
 }
