@@ -240,85 +240,78 @@
 
 /* Feature Section Design start here */
 .feature-section{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
    max-width: 1110px;
    max-height: 270px;
-   margin: 0 auto;
+   display: flex;
    align-items: center;
+   margin: 0 auto;
+   gap: 96px;
    margin-bottom: 100px;
 }
 
-.feature-container img {
-max-width: 404px;
-max-height: 270px;
-border-radius: 7px;
+.feature-container {
+   max-width: 404px;
+   max-height: 270px;
 }
-
 .feature-text{
-max-width: 610px;
-max-height: 224px;
+   max-width: 610px;
+   max-height: 224px;
 }
-
-.feature-title {
+.feature-text h2{
    max-width: 610px;
    max-height: 60px;
    font-size: 2.37rem;
    font-weight: 700;
-   white-space: nowrap;
    color: #0A0826;
-   margin-bottom: 16px;
 }
 
-.feature-details{
-   max-width: 501px;
+
+.feature-text p{
+   max-width: 500px;
    max-height: 88px;
    font-size: 1rem;
    font-weight: 700;
+   line-height: 28px;
    color: #6C6C6C;
-   margin-bottom: 16px;
 }
 
-.feature-btn{
-   width: 155;
-   height: 44;
-   background-color: #E02C6D;
-   border: none; 
-   margin-bottom: 23px;
-}
-
-.feature-btn-text{
-   width: 116;
-   height: 24;
-   font-size: 1rem;
-   font-weight: 700;
-   color: #FFFFFF;
-   margin: 5px 10px;
-}
-
-.footer-text{
-   height: 200px;
-   color: #FFFFFF;
+footer{
    background-color: #0A0826;
+   color: aliceblue;
    text-align: center;
-   align-content: center;
+   padding: 50px 68px;
 }
 
-.footer-title{
-   font-size: 1.5rem;
+footer h1{
+   font-size: 1.3rem;
    font-weight: 700;
-   color: #FFFFFF;
+   padding-bottom: 5px;
 }
 
-small{
-   font-size: 0.87rem;
+footer .footer-text1, .footer-text2{
+   font-size: 0.75rem;
    font-weight: 700;
+   padding-bottom: 5px;
+}
+.footer-icon{
+   max-width: 176;
+   max-height: 32;
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+   align-items: center;
+   margin-top: 10px;
+   
 }
 
-.footer-text p{
-   font-size: 0.87rem;
-   font-weight: 700;
+.footer-icon img{
+   width: 32px;
+   height: 32px;
+   filter: brightness(0) invert(1);
 }
+   
+
+
 
 
 /* Responsive Design for Mobile Devices */
@@ -356,7 +349,7 @@ small{
       margin-bottom: 90px;
 
    }
-   .banner-description{
+   .banner-description {
       max-width: 100%;
    }
   .banner-image img{
@@ -385,7 +378,21 @@ small{
    align-content: center;  
   }
 
-  .card {
+  .card, .feature-btn-text {
   margin: 0 auto;
   }
+  .feature-container{
+   margin: 0 auto;
+  }
+  .feature-section{
+   flex-direction: column-reverse;
+   text-align: center;
+   margin-top: 3100px;
+   
+  }
+  .feature-text h2, .feature-details {
+   padding-bottom: 100px;
+  }
+ 
+  
 }
